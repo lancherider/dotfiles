@@ -13,6 +13,11 @@ alias vssh="vagrant ssh"
 alias vs="vagrant status"
 alias vgs="vagrant global-status"
 alias vh="vagrant halt"
+# Lastpass aliases
+alias lpin="lpass login"
+alias lpout="lpass logout"
+alias lps="lpass show"
+alias lpl="lpass ls"
 vd () {
 	for VAGRANT_HOST in $@
 	do
