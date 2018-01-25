@@ -18,6 +18,10 @@ alias lpin="lpass login"
 alias lpout="lpass logout"
 alias lps="lpass show"
 alias lpl="lpass ls"
+#Git aliases
+alias gp="git pull"
+alias gc="git commit"
+alias ga="git add"
 vd () {
 	for VAGRANT_HOST in $@
 	do
