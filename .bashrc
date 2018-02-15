@@ -2,6 +2,7 @@ alias gitlog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 alias gotopi="ssh -l pi 192.168.2.24 -p 22022"
 alias rdep="r10k deploy environment production -pv"
 alias config="/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME"
+alias ag="ag --color-line-number '1;36' --color-match '1;91'"
 # Docker aliases
 alias dm=docker-machine
 alias dps="docker ps"
