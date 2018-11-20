@@ -3,6 +3,8 @@ alias gotopi="ssh -l pi 192.168.2.24 -p 22022"
 alias rdep="r10k deploy environment production -pv"
 alias config="/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME"
 alias ag="ag --color-line-number '1;36' --color-match '1;91'"
+alias httpie="/usr/local/opt/httpie/bin/http"
+alias wake="caffeinate -disu"
 # Docker aliases
 alias dm=docker-machine
 alias dps="docker ps"
@@ -14,6 +16,7 @@ alias vssh="vagrant ssh"
 alias vs="vagrant status"
 alias vgs="vagrant global-status"
 alias vh="vagrant halt"
+alias vp="vagrant provision"
 # Lastpass aliases
 alias lpin="lpass login"
 alias lpout="lpass logout"

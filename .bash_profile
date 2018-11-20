@@ -10,3 +10,6 @@ parse_git_branch() {
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 export HISTFILESIZE=10000
 export HISTSIZE=10000
+export ANSIBLE_OPTIONS="-c ssh --ask-pass"
+
+eval "$(rbenv init -)"
