@@ -27,6 +27,7 @@ alias gp="git pull"
 alias gc="git commit"
 alias ga="git add"
 alias gs="git status"
+alias gco="git checkout"
 vd () {
 	for VAGRANT_HOST in $@
 	do
