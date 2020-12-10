@@ -33,25 +33,5 @@ alias gco="git checkout"
 alias gitlog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 # Terraform aliases
 alias tf=terraform
-# Vagrant Destroy
-vd () {
-	for VAGRANT_HOST in $@
-	do
-		cert_name=$(vagrant ssh puppet -c "sudo puppet cert list --all" 2>/dev/null | grep "${VAGRANT_HOST}-${USER}\.dev.*" | awk '{gsub("\"", "", $2);print $2}')
-		echo -n "Press ENTER to delete ${cert_name}..."
-		read
-		vagrant ssh puppet -c "sudo puppet cert clean ${cert_name}"
-		vagrant destroy -f ${VAGRANT_HOST}
-	done
-}
-vyum () {
-	vagrant global-status | grep pgoodman | sed 's/  */#/g' | cut -d'#' -f2 |
-	while read VAGRANT_HOST
-	do
-		vagrant up "${VAGRANT_HOST}"
-		vagrant ssh "${VAGRANT_HOST}" -c "sudo yum -y update"
-		vagrant halt "${VAGRANT_HOST}"
-	done
-}
 # platform/dev shovel
 shovel() ( /Users/pgoodman/git/dev/script/run shovel "$@"; )
