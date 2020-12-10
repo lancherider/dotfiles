@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/pgoodman/git/control/site/profile/templates/mkvm'
 let g:netrw_dirhist_2='/Users/pgoodman/git/control'
 let g:netrw_dirhist_3='/Users/pgoodman/git/ci_server/manifests'
 let g:netrw_dirhist_4='/Users/pgoodman/git/control/site/profile/manifests/puppet'
 let g:netrw_dirhist_5='/Users/pgoodman/Documents/procedures'
 let g:netrw_dirhist_6='/Users/pgoodman/git/vagrant/puppet/production/modules/filebeat/templates'
+let g:netrw_dirhist_7='/Users/pgoodman/git/vagrant/script'
