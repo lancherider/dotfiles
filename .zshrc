@@ -49,3 +49,8 @@ alias tf=terraform
 powercli() {
     docker run --rm -it --name powercli -v ~/Downloads/chocolatey:/mnt/cdrom prg/powercli
 }
+
+# K8S
+export GPG_TTY=$(tty)
+source <(/usr/local/bin/kubectl completion zsh)
+source <(/usr/local/bin/kustomize completion zsh)
