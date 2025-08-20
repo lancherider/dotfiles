@@ -17,7 +17,6 @@ alias httpie="/usr/local/opt/httpie/bin/http"
 alias wake="caffeinate -disu"
 alias vbm=VBoxManage
 alias keyrm="ssh-keygen -R"
-alias pingy="/Users/pgoodman/git/_ping/_ping.sh"
 alias wttr="curl wttr.in/28806?u"
 # Docker aliases
 alias dm=docker-machine
@@ -45,10 +44,6 @@ alias gco="git checkout"
 alias gitlog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 # Terraform aliases
 alias tf=terraform
-# PowerCLI
-powercli() {
-    docker run --rm -it --name powercli -v ~/Downloads/chocolatey:/mnt/cdrom prg/powercli
-}
 
 # K8S
 export GPG_TTY=$(tty)
