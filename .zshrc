@@ -54,3 +54,9 @@ powercli() {
 export GPG_TTY=$(tty)
 source <(/usr/local/bin/kubectl completion zsh)
 source <(/usr/local/bin/kustomize completion zsh)
+
+## Tanka
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/tk tk
